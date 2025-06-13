@@ -8,16 +8,27 @@ export const ProductCard = ({ data,dat, loading, cartData, setCartData }) => {
 
   const AddToCart=((id)=>
   {
-    const chosenCard=data.find((dat)=>
+    const selectedProduct=data.find((dat)=>
     {
       return dat.id === id
     })
 
-    const updatedCardData=[...cartData,chosenCard]
-    localStorage.setItem("cardData",JSON.stringify(updatedCardData))
+   // Check if product is already in cart
+    let isAlreadyInCart = false;
+    for (let item of cartData) {
+      if (item.id === selectedProduct.id) {
+        isAlreadyInCart = true;
+        break;
+      }
+    }
 
-    setCartData(updatedCardData)
-
+    // If not in cart, add it
+    if (!isAlreadyInCart) {
+      const newCart = [...cartData, selectedProduct];
+      setCartData(newCart);
+      localStorage.setItem('cartData', JSON.stringify(newCart));
+      
+    }
    
 
   })

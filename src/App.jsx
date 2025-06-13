@@ -8,7 +8,7 @@ function App() {
 
   const url=`http://localhost:8000/products`
   const {data,loading} =useFetch(url)
-  const [cartData,setCartData] = useState(JSON.parse(localStorage.getItem("cardData"))||[])
+  const [cartData,setCartData] = useState(JSON.parse(localStorage.getItem("cartData"))||[])
   console.log(data)
 
   return (
