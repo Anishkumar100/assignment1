@@ -1,7 +1,12 @@
 import React from 'react'
+import {Route,Routes} from "react-router-dom"
+import { Home,Cart } from '../pages/indexPages'
 
 export const AllRoutes = () => {
   return (
-    <div>AllRoutes</div>
+    <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/cart" element={<Cart/>}/>
+    </Routes>
   )
 }
