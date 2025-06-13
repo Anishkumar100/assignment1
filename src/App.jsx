@@ -2,14 +2,19 @@ import { useState } from 'react'
 import './App.css'
 import { Header,Footer } from './components/indexComponents'
 import { AllRoutes } from './routes/AllRoutes'
+import { useFetch } from './hooks/useFetch'
 
 function App() {
 
+  const url=`http://localhost:8000/products`
+  const {data,loading} =useFetch(url)
+  const [cartData,setCartData] = useState([])
+  console.log(data)
 
   return (
     <>
      <Header/>
-     <AllRoutes/>
+     <AllRoutes data={data} loading={loading} cartData={cartData} setCartData={setCartData}/>
      <Footer/>
     </>
   )

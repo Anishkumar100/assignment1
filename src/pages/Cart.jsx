@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const Cart = () => {
+export const Cart = (  {data,loading,cartData,setCartData} ) => {
   return (
     <main>
-        <div>Cart Page</div>
+        <section>
+          
+        </section>
     </main>
   )
 }

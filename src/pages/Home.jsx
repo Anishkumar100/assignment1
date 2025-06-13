@@ -1,9 +1,13 @@
 import React from 'react'
 
-export const Home = () => {
+export const Home = ( {data,loading,cartData,setCartData} ) => {
   return (
     <main>
-        <div>Home Page</div>
+      <section>
+        {data ? <>
+        
+        </>: <h1>No Product Information</h1>}
+      </section>
     </main>
   )
 }

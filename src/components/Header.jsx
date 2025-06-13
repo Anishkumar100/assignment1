@@ -1,17 +1,36 @@
 import React, { useState } from 'react'
-import { Link, useSearchParams } from 'react-router-dom'
-import { assets } from '../assets/assets'
+import { Link, NavLink, useSearchParams } from 'react-router-dom'
+
 
 export const Header = () => {
 
-  const [dark, setDark] = useState(false)
+  
+  const active=`block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500`
+
+  const inactive=`block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700`
+  const [dark, setDark] = useState(true)
   const [hidden, setHidden] = useState(true)
+
+  const handleDark=()=>
+  {
+
+    if(dark)
+    {
+      document.documentElement.classList.remove("dark")
+    }
+    else
+    {
+      document.documentElement.classList.add("dark")
+    }
+
+    setDark((prev)=>!prev)
+  }
   return (
     <header>
 
 
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to="/" className="flex items-start gap-3  rtl:space-x-reverse">
             <p className="text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white select-none">
               Ani<span className="text-blue-600 dark:text-blue-400">-Assignments</span></p>
@@ -23,10 +42,7 @@ export const Header = () => {
             {/* Dark Mode Toggle - always visible */}
             <div className="flex items-center">
               <button
-                onClick={() => {
-                  document.documentElement.classList.toggle('dark');
-                  setDark(prev => !prev);
-                }}
+                onClick={() => handleDark()}
                 className="p-2 rounded-md bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors duration-200 text-xl"
               >
                 {dark ? '☀️' : '🌙'}
@@ -56,15 +72,13 @@ export const Header = () => {
 
 
 
-            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="flex flex-col gap-4 p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
-                <a href="#" className="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+                <NavLink  to="/" className={({ isActive })=> isActive?active:inactive} aria-current="page">Home</NavLink>
               </li>
+              
               <li>
-                <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-              </li>
-              <li>
-                <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                <NavLink to="/cart" className={({ isActive })=> isActive?active:inactive} >Services</NavLink>
               </li>
             </ul>
           </div>
