@@ -7,7 +7,7 @@ export const Home = ( {data,loading,cartData,setCartData} ) => {
       <section className='flex flex-wrap justify-center '>
         {data ? data.map((dat,index)=>
         {
-          return (<ProductCard key={index} data={dat} loading={loading} cartData={cartData} setCartData={setCartData}/>)
+          return (<ProductCard key={index} data={data} dat={dat} loading={loading} cartData={cartData} setCartData={setCartData}/>)
         })
         : <h1>No Product Information</h1>}
       </section>
