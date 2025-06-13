@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "description": "Ergonomic wireless mouse with adjustable DPI",
+    "price": 599,
+    "image": "https://example.com/images/wireless-mouse.jpg",
+    "stock": 20
+  },
+  {
+    "id": 2,
+    "name": "Mechanical Keyboard",
+    "description": "RGB backlit mechanical keyboard with blue switches",
+    "price": 2499,
+    "image": "https://example.com/images/mechanical-keyboard.jpg",
+    "stock": 15
+  },
+  {
+    "id": 3,
+    "name": "Gaming Headset",
+    "description": "Surround sound headset with noise-canceling mic",
+    "price": 1799,
+    "image": "https://example.com/images/gaming-headset.jpg",
+    "stock": 10
+  },
+  {
+    "id": 4,
+    "name": "USB-C Hub",
+    "description": "7-in-1 USB-C hub with HDMI, USB 3.0, SD card slots",
+    "price": 1299,
+    "image": "https://example.com/images/usb-c-hub.jpg",
+    "stock": 25
+  },
+  {
+    "id": 5,
+    "name": "1080p Web Camera",
+    "description": "Full HD webcam with built-in microphone",
+    "price": 999,
+    "image": "https://example.com/images/webcam.jpg",
+    "stock": 30
+  },
+  {
+    "id": 6,
+    "name": "Laptop Stand",
+    "description": "Adjustable aluminum stand for laptops and tablets",
+    "price": 799,
+    "image": "https://example.com/images/laptop-stand.jpg",
+    "stock": 18
+  },
+  {
+    "id": 7,
+    "name": "Portable SSD 500GB",
+    "description": "High-speed external SSD with USB 3.1 support",
+    "price": 3499,
+    "image": "https://example.com/images/portable-ssd.jpg",
+    "stock": 12
+  },
+  {
+    "id": 8,
+    "name": "Bluetooth Speaker",
+    "description": "Waterproof portable speaker with 12-hour battery life",
+    "price": 1499,
+    "image": "https://example.com/images/bluetooth-speaker.jpg",
+    "stock": 22
+  },
+  {
+    "id": 9,
+    "name": "Smart LED Bulb",
+    "description": "Wi-Fi enabled RGB smart bulb with app control",
+    "price": 499,
+    "image": "https://example.com/images/smart-bulb.jpg",
+    "stock": 40
+  }
+]
