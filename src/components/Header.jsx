@@ -29,7 +29,7 @@ export const Header = () => {
     <header>
 
 
-      <nav className="bg-white border-gray-200 dark:bg-gray-900">
+      <nav className="bg-white border-gray-200 dark:bg-gray-900 border-b  dark:border-slate-500">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to="/" className="flex items-start gap-3  rtl:space-x-reverse">
             <p className="text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white select-none">

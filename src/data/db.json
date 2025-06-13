@@ -2,75 +2,75 @@
   "products": [
     {
       "id": 1,
-      "name": "Wireless Mouse",
-      "description": "Ergonomic wireless mouse with adjustable DPI",
-      "price": 599,
-      "image": "http://localhost:8000/images/wireless-mouse.jpg",
-      "stock": 20
+      "name": "iPhone 9",
+      "description": "A reliable smartphone with great battery life.",
+      "price": 549,
+      "image": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
+      "stock": 94
     },
     {
       "id": 2,
-      "name": "Mechanical Keyboard",
-      "description": "RGB backlit mechanical keyboard with blue switches",
-      "price": 2499,
-      "image": "http://localhost:8000/images/mechanical-keyboard.jpg",
-      "stock": 15
+      "name": "iPhone X",
+      "description": "Super Retina HD OLED display, A12 Bionic chip.",
+      "price": 899,
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "stock": 34
     },
     {
       "id": 3,
-      "name": "Gaming Headset",
-      "description": "Surround sound headset with noise-canceling mic",
-      "price": 1799,
-      "image": "http://localhost:8000/images/gaming-headset.jpg",
-      "stock": 10
+      "name": "Samsung Universe 9",
+      "description": "Samsung's flagship phone with multi-camera system.",
+      "price": 1249,
+      "image": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
+      "stock": 36
     },
     {
       "id": 4,
-      "name": "USB-C Hub",
-      "description": "7-in-1 USB-C hub with HDMI, USB 3.0, SD card slots",
-      "price": 1299,
-      "image": "http://localhost:8000/images/usb-c-hub.jpg",
-      "stock": 25
-    },
-    {
-      "id": 5,
-      "name": "1080p Web Camera",
-      "description": "Full HD webcam with built-in microphone",
-      "price": 999,
-      "image": "http://localhost:8000/images/webcam.jpg",
-      "stock": 30
+      "name": "OPPO F19",
+      "description": "Stylish OPPO smartphone with strong performance.",
+      "price": 280,
+      "image": "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg",
+      "stock": 123
     },
     {
       "id": 6,
-      "name": "Laptop Stand",
-      "description": "Adjustable aluminum stand for laptops and tablets",
-      "price": 799,
-      "image": "http://localhost:8000/images/laptop-stand.jpg",
-      "stock": 18
+      "name": "MacBook Pro",
+      "description": "MacBook Pro 2021 with M1 chip and more power.",
+      "price": 1749,
+      "image": "https://cdn.dummyjson.com/product-images/6/thumbnail.png",
+      "stock": 83
     },
     {
       "id": 7,
-      "name": "Portable SSD 500GB",
-      "description": "High-speed external SSD with USB 3.1 support",
-      "price": 3499,
-      "image": "http://localhost:8000/images/portable-ssd.jpg",
-      "stock": 12
-    },
-    {
-      "id": 8,
-      "name": "Bluetooth Speaker",
-      "description": "Waterproof portable speaker with 12-hour battery life",
+      "name": "Samsung Galaxy Book",
+      "description": "Slim Windows laptop with 8 GB RAM.",
       "price": 1499,
-      "image": "http://localhost:8000/images/bluetooth-speaker.jpg",
-      "stock": 22
+      "image": "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg",
+      "stock": 50
     },
     {
       "id": 9,
-      "name": "Smart LED Bulb",
-      "description": "Wi-Fi enabled RGB smart bulb with app control",
-      "price": 499,
-      "image": "http://localhost:8000/images/smart-bulb.jpg",
-      "stock": 40
+      "name": "Infinix Inbook",
+      "description": "Budget-friendly 14” laptop with Intel Core i3.",
+      "price": 1099,
+      "image": "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg",
+      "stock": 96
+    },
+    {
+      "id": 11,
+      "name": "Perfume Oil",
+      "description": "Fragrance oil – imitation Armani Aqua Di Gio.",
+      "price": 13,
+      "image": "https://cdn.dummyjson.com/product-images/11/thumbnail.jpg",
+      "stock": 65
+    },
+    {
+      "id": 12,
+      "name": "Brown Perfume",
+      "description": "Royal Mirage Sport brown perfume – 120 ml.",
+      "price": 40,
+      "image": "https://cdn.dummyjson.com/product-images/12/thumbnail.jpg",
+      "stock": 52
     }
   ]
 }

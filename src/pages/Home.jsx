@@ -1,12 +1,15 @@
 import React from 'react'
+import { ProductCard } from '../components/indexComponents'
 
 export const Home = ( {data,loading,cartData,setCartData} ) => {
   return (
     <main>
-      <section>
-        {data ? <>
-        
-        </>: <h1>No Product Information</h1>}
+      <section className='flex flex-wrap justify-center '>
+        {data ? data.map((dat,index)=>
+        {
+          return (<ProductCard key={index} data={dat} loading={loading} cartData={cartData} setCartData={setCartData}/>)
+        })
+        : <h1>No Product Information</h1>}
       </section>
     </main>
   )
